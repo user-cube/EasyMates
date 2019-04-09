@@ -1,18 +1,9 @@
 package rc.EasyMates;
 
 import android.content.Intent;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view actual view.
      */
     public void changeToRegister(View view){
-        Intent intent = new Intent(this, SignIn.class);
+        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
 }
