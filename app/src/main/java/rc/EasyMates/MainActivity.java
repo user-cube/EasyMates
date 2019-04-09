@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
      * Set actual view.
      *
      * @param savedInstanceState instance of the
-     *                           atual view.
+     *                           actual view.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
