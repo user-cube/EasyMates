@@ -87,9 +87,9 @@ public class SignUp extends AppCompatActivity {
             FileOutputStream fileOutputStream = new FileOutputStream(db);
             OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream);
             writer.append(email);
+            writer.append(password);
             writer.append("0");
             writer.append(name);
-            writer.append(password);
             writer.append(phone);
             writer.close();
             fileOutputStream.close();
