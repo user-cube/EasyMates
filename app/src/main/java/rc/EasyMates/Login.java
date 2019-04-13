@@ -1,6 +1,7 @@
 package rc.EasyMates;
 
 import android.content.Intent;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,8 +15,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Login extends AppCompatActivity {
+    /**
+     * Array that stores users information.
+     */
     public ArrayList<String> database;
-    public String path = "/storage/1250-ACFD/database.txt";
+    /**
+     * Gets the path to sdcard.
+     */
+    public File sdcard = Environment.getExternalStorageDirectory();
 
     /**
      * Set actual view.
@@ -41,8 +48,7 @@ public class Login extends AppCompatActivity {
     public String getPasswordWithEmail(String email){
 
         database = new ArrayList<>();
-        Log.d("t", "t"+path);
-        File db = new File(path);
+        File db = new File(sdcard,"database.txt");
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(db));
@@ -97,8 +103,7 @@ public class Login extends AppCompatActivity {
      */
     public boolean isFirst(String email){
         database = new ArrayList<>();
-        Log.d("t", "t"+path);
-        File db = new File(path);
+        File db = new File(sdcard,"database.txt");
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(db));

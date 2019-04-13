@@ -1,6 +1,7 @@
 package rc.EasyMates;
 
 import android.content.Intent;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,17 +9,26 @@ import android.view.View;
 import android.widget.EditText;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class SignUp extends AppCompatActivity {
+    /**
+     * Array that stores users information.
+     */
     public ArrayList<String> database;
-    public String path = "/storage/1250-ACFD/database.txt";
+    /**
+     * Gets the path to sdcard.
+     */
+    public File sdcard = Environment.getExternalStorageDirectory();
 
     /**
      * Set the actual view.
@@ -43,8 +53,7 @@ public class SignUp extends AppCompatActivity {
      */
     public boolean isStored(String email){
         database = new ArrayList<>();
-        Log.d("t", "t"+path);
-        File db = new File(path);
+        File db = new File(sdcard,"database.txt");
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(db));
@@ -79,30 +88,23 @@ public class SignUp extends AppCompatActivity {
      * @return if the user was added,
      * otherwise false.
      */
-    public boolean store(String name, String email, String password, String phone){
+    public boolean store(String name, String email, String password, String phone) {
+        File db = new File(sdcard,"database.txt");
 
-        File db = new File(path);
-
+        BufferedWriter writer = null;
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(db);
-            OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream);
-            writer.append(email);
-            writer.append(password);
-            writer.append("0");
-            writer.append(name);
-            writer.append(phone);
+            writer = new BufferedWriter(new FileWriter(db, true));
+            writer.append(email+"\n");
+            writer.append(password+"\n");
+            writer.append("0"+"\n");
+            writer.append(name+"\n");
+            writer.append(phone+"\n");
             writer.close();
-            fileOutputStream.close();
             return true;
-        } catch (FileNotFoundException e) {
-            //e.printStackTrace();
-            Log.d("Erro", "File not found");
-            return false;
         } catch (IOException e) {
-            //e.printStackTrace();
-            Log.d("Erro", "IO");
-            return false;
+            Log.d("erro", "Não deu para tratar do ficheiro");
         }
+        return false;
     }
 
     /**
@@ -119,7 +121,7 @@ public class SignUp extends AppCompatActivity {
 
         try{
             boolean isUserStored = isStored(email.getText().toString());
-            if (isUserStored){
+            if (!isUserStored){
                 boolean stored = store(name.getText().toString(), email.getText().toString(), password.getText().toString(), phone.getText().toString());
                 if (stored){
                     Intent intent = new Intent(this, UserSucess.class);
@@ -128,7 +130,7 @@ public class SignUp extends AppCompatActivity {
                     Log.d("store", "false");
                 }
             } else {
-                Log.d("isStored", "false");
+                Log.d("isStored", "true");
             }
         } catch (Exception e){
             Log.d("Registo", "Entrada falhada.");
