@@ -94,7 +94,7 @@ public class SignUp extends AppCompatActivity {
         BufferedWriter writer = null;
         try {
             writer = new BufferedWriter(new FileWriter(db, true));
-            writer.append("\n" +email+"\n");
+            writer.append(email+"\n");
             writer.append(password+"\n");
             writer.append("0"+"\n");
             writer.append(name+"\n");
