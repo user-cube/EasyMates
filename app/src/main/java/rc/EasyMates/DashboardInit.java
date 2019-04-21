@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * Class displayed when it's the
+ * first login of the user.
+ */
 public class DashboardInit extends AppCompatActivity {
 
     /**

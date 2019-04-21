@@ -14,6 +14,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Class that allows user to
+ * get into the platform.
+ */
 public class Login extends AppCompatActivity {
     /**
      * Array that stores users information.

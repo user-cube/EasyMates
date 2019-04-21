@@ -12,6 +12,11 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class that allow users to
+ * choose if the want login in
+ * or sign up.
+ */
 public class MainActivity extends AppCompatActivity {
     /**
      * List of permissions to be asked.

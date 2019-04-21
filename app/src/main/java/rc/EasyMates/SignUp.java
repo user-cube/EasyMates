@@ -20,6 +20,14 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+/**
+ * Class that allow us to a new
+ * user sign up into the EasyMates
+ * app.
+ * If the register was successfully
+ * done, the user is redirected to
+ * a the UserSucess view.
+ */
 public class SignUp extends AppCompatActivity {
     /**
      * Array that stores users information.

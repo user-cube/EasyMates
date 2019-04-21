@@ -5,6 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * Class that allow us to present a
+ * message of successful register.
+ *
+ * Note: After that message appear
+ * the user should login into the
+ * popper page to that.
+ */
 public class UserSucess extends AppCompatActivity {
 
     /**
