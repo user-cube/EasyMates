@@ -9,6 +9,6 @@ To begin using this template, choose one of the following options to get started
 
 ## Authors
 * **Rui Coelho** - [user-cube](https://github.com/user-cube/)
-* **Luís Costa** - [lmcosta98](https://github.com/lmcosta/)
+* **Luís Costa** - [lmcosta98](https://github.com/lmcosta98/)
 
 ## Screens
