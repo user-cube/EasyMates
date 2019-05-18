@@ -3,7 +3,12 @@ package rc.EasyMates;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class manageGroup extends AppCompatActivity {
+/**
+ * Main page of House Management.
+ *
+ * @author rc
+ */
+public class manageHouse extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

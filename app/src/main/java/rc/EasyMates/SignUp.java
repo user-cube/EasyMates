@@ -28,6 +28,8 @@ import java.util.ArrayList;
  * If the register was successfully
  * done, the user is redirected to
  * a the UserSucess view.
+ *
+ * @author rc
  */
 public class SignUp extends AppCompatActivity {
     /**

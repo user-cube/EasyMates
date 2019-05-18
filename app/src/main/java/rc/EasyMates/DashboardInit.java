@@ -9,6 +9,8 @@ import android.view.View;
 /**
  * Class displayed when it's the
  * first login of the user.
+ *
+ * @author rc
  */
 public class DashboardInit extends AppCompatActivity {
 

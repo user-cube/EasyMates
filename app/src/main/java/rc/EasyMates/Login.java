@@ -18,6 +18,8 @@ import java.util.ArrayList;
 /**
  * Class that allows user to
  * get into the platform.
+ *
+ * @author rc
  */
 public class Login extends AppCompatActivity {
     /**

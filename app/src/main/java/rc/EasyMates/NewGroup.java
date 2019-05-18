@@ -26,16 +26,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Allow us to create a new group.
+ *
+ * @author rc
+ */
 public class NewGroup extends AppCompatActivity {
-
-    /**
-     * Array that stores users information.
-     */
-    public ArrayList<String> database;
-    /**
-     * Gets the path to sdcard.
-     */
-    public File sdcard = Environment.getExternalStorageDirectory();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

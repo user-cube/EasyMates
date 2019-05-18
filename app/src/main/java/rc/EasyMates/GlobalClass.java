@@ -1,5 +1,10 @@
 package rc.EasyMates;
 
+/**
+ * Global Variables.
+ *
+ * @author rc
+ */
 public class GlobalClass {
 
     public static String email;

@@ -4,6 +4,11 @@ import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ * Allow users to join a group.
+ *
+ * @author rc
+ */
 public class JoinGroup extends AppCompatActivity {
 
     @Override

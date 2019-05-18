@@ -18,6 +18,8 @@ import java.util.List;
  * Class that allow users to
  * choose if the want login in
  * or sign up.
+ *
+ * @author rc
  */
 public class MainActivity extends AppCompatActivity {
     /**

@@ -7,6 +7,8 @@ import android.os.Bundle;
 /**
  * Class displayed when the
  * user has already a group.
+ *
+ * @author rc
  */
 public class Dashboard extends AppCompatActivity {
 

@@ -13,6 +13,8 @@ import android.view.View;
  * Note: After that message appear
  * the user should login into the
  * popper page to that.
+ *
+ * @author rc 
  */
 public class UserSucess extends AppCompatActivity {
 
