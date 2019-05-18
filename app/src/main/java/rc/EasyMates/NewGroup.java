@@ -9,6 +9,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 
 import java.io.BufferedReader;
@@ -52,54 +53,21 @@ public class NewGroup extends AppCompatActivity {
      */
     @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean generateGroup() {
+
         EditText groupName = (EditText) findViewById(R.id.groupName);
         EditText location = (EditText) findViewById(R.id.location);
 
         String uuid = UUID.randomUUID().toString();
 
 
-        String email = GlobalClass.email;
-
-        database = new ArrayList<>();
-        File db = new File(sdcard,"database.txt");
-
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(db));
-            String line;
-
-
-            while ((line = br.readLine()) != null) {
-                database.add(line);
-            }
-            br.close();
-        }
-        catch (IOException e) {
-            Log.d("File", "IOException");
+        if(groupName.getText().toString().trim().length() > 0 && location.getText().toString().trim().length() > 0){
+            GlobalClass.groupName = groupName.getText().toString();
+            GlobalClass.location = location.getText().toString();
+            GlobalClass.uuid = uuid;
+            return true;
         }
 
-        int linenumber = 0;
-
-        for (int i = 0; i<database.size(); i++){
-            if (database.get(i).equals(email)){
-               linenumber = i+2;
-            }
-        }
-        Path path = Paths.get("database.txt");
-        List<String> lines = null;
-        try {
-            lines = Files.readAllLines(path, StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        lines.set(linenumber, uuid);
-        try {
-            Files.write(path, lines, StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        return true;
+        return false;
     }
 
     /**
@@ -108,16 +76,17 @@ public class NewGroup extends AppCompatActivity {
      * screen.
      */
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public void createGroup(){
+    public void createGroup(View view){
         if(generateGroup()){
-            Intent intent = new Intent(this, Login.class);
+            Intent intent = new Intent(this, SuccessGroupCreation.class);
             startActivity(intent);
         } else{
             Log.d(
-                    "Group Genration",
+                    "Group Generation",
                     "Fail to generate group"
             );
         }
 
     }
+
 }
