@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="rc.EasyMates">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="rc.EasyMates"
+    tools:targetApi="11">
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -11,7 +13,8 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewGroup"></activity>
+        <activity android:name="rc.EasyMates.GlobalClass"/>
+        <activity android:name=".NewGroup" />
         <activity android:name=".JoinGroup" />
         <activity android:name=".UserSucess" />
         <activity android:name=".DashboardInit" />

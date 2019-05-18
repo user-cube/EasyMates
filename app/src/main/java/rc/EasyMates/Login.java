@@ -146,6 +146,7 @@ public class Login extends AppCompatActivity {
         EditText email = (EditText) findViewById(R.id.emailLog);
         EditText password = (EditText) findViewById(R.id.passwordLog);
 
+
         try {
 
             boolean val = isValid(password.getText().toString(), email.getText().toString());
@@ -153,13 +154,11 @@ public class Login extends AppCompatActivity {
 
             if (val) {
                 if (val2) { //first login
-                    final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
-                    globalVariable.setEmail(email.getText().toString());
+                    GlobalClass.email= email.getText().toString();
                     Intent intent = new Intent(this, DashboardInit.class);
                     startActivity(intent);
                 } else { //not first login
-                    final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
-                    globalVariable.setEmail(email.getText().toString());
+                    GlobalClass.email= email.getText().toString();
                     Intent intent = new Intent(this, Dashboard.class);
                     startActivity(intent);
                 }

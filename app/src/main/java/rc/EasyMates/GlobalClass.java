@@ -1,25 +1,7 @@
 package rc.EasyMates;
 
-import android.app.Application;
+public class GlobalClass {
 
-public class GlobalClass extends Application {
-
-    private String name;
-    private String email;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String aName) {
-        name = aName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String aEmail) {
-        email = aEmail;
-    }
+    public static String email;
+    public static String userName;
 }
