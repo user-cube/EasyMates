@@ -57,7 +57,7 @@ public class NewGroup extends AppCompatActivity {
 
         String uuid = UUID.randomUUID().toString();
 
-<<<<<<< HEAD
+
         String email = GlobalClass.email;
 
         database = new ArrayList<>();
@@ -66,8 +66,7 @@ public class NewGroup extends AppCompatActivity {
         try {
             BufferedReader br = new BufferedReader(new FileReader(db));
             String line;
-=======
->>>>>>> acc59234d3568b2668ea73f3ae80e26f7f0623ed
+
 
             while ((line = br.readLine()) != null) {
                 database.add(line);
