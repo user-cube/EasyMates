@@ -31,11 +31,6 @@ public class NewGroup extends AppCompatActivity {
 
         String uuid = UUID.randomUUID().toString();
 
-        final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
-        final String email  = globalVariable.getEmail();
-
-        
-
 
 
 
