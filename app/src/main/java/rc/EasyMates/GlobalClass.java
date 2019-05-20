@@ -59,4 +59,9 @@ public class GlobalClass {
     public static String quantitem20;
 
     public static int counter = 1;
+
+    public static String agua = "69,99 euros / Abril";
+    public static String compras1 = null;
+    public static String compras2 = null;
+    public static String luz = null;
 }
