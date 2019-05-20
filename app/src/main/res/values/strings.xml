@@ -27,4 +27,16 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+    <string name="user_name">Placeholding Placeholder</string>
+    <string name="app_manage_group">Manage Groups</string>
+    <string name="app_shop">Shopping List</string>
+    <string name="app_group">Groups</string>
+    <string name="app_manage_house">House Management</string>
+    <string name="app_manage_expenses">Expenses</string>
+    <string name="app_user_settings">User</string>
+    <string name="app_logout">Logout</string>
+    <string name="app_profile">Profile</string>
+    <string name="app_settings">Settings</string>
+    <string name="nav_demo">Teste</string>
 </resources>
