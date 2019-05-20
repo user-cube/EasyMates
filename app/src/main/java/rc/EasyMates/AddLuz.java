@@ -14,6 +14,7 @@ public class AddLuz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_luz);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        onLoad();
     }
 
     public void onLoad(){
