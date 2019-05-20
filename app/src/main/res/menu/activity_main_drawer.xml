@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/manage_house"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/app_manage_house"
+            />
+        <item
+            android:id="@+id/manage_expenses"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="@string/app_manage_expenses"
+            />
+        <item
+            android:id="@+id/shopping_list"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="@string/app_shop"
+            />
+    </group>
+
+    <item android:title="@string/app_group">
+        <menu>
+            <item
+                android:id="@+id/manage_group"
+                android:icon="@drawable/ic_group_black_24dp"
+                android:title="@string/app_manage_group"
+                />
+        </menu>
+    </item>
+
+    <item android:title="@string/app_user_settings">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="@string/app_profile"
+                />
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/app_settings"
+                />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/app_logout"
+                />
+        </menu>
+    </item>
+
+
+</menu>
