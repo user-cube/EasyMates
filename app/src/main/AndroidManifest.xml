@@ -13,7 +13,8 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShopList"></activity>
+        <activity android:name=".ShopListSave"></activity>
+        <activity android:name=".ShopList" />
         <activity android:name=".AddDespesas" />
         <activity android:name=".SuccessJoin" />
         <activity
