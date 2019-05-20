@@ -12,4 +12,5 @@ public class GlobalClass {
     public static String uuid;
     public static String groupName;
     public static String location;
+    public static String defaultUUID = "abcd";
 }

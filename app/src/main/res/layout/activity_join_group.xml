@@ -6,4 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".JoinGroup">
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="258dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toTopOf="@+id/uuidSet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/uuidSet"
+        android:layout_width="255dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Group ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/joinButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="joinGroup"
+        android:text="Juntar-se"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uuidSet" />
 </android.support.constraint.ConstraintLayout>

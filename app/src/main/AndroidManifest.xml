@@ -13,7 +13,12 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".manageHouse"></activity>
+        <activity android:name=".SuccessJoin"></activity>
+        <activity
+            android:name=".UserSucess2"
+            android:label="@string/title_activity_user_sucess2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".manageHouse" />
         <activity android:name=".SuccessGroupCreation" />
         <activity android:name=".NewGroup" />
         <activity android:name=".JoinGroup" />
