@@ -13,7 +13,9 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddCompras"></activity>
+        <activity android:name=".SuccessMember"></activity>
+        <activity android:name=".AddMembers" />
+        <activity android:name=".AddCompras" />
         <activity android:name=".AddLuz" />
         <activity android:name=".AddAgua" />
         <activity android:name=".ShopListSave" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SuccessGroupCreation">
+    tools:context=".SuccessMember">
 
     <ImageView
         android:id="@+id/imageView12"
@@ -22,7 +22,7 @@
         android:layout_width="292dp"
         android:layout_height="120dp"
         android:gravity="center"
-        android:text="Grupo criado com sucesso!! Começa a gerir a tua casa!"
+        android:text="Utilizador adicionado com sucesso!"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gestCasa"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +34,8 @@
         android:id="@+id/gestCasa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="manageGroup"
-        android:text="Gerir Casa"
+        android:onClick="store"
+        android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

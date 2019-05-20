@@ -160,9 +160,10 @@ public class Login extends AppCompatActivity {
                     GlobalClass.email= email.getText().toString();
                     Intent intent = new Intent(this, DashboardInit.class);
                     startActivity(intent);
+
                 } else { //not first login
                     GlobalClass.email= email.getText().toString();
-                    Intent intent = new Intent(this, Dashboard.class);
+                    Intent intent = new Intent(this, manageHouse.class);
                     startActivity(intent);
                 }
             } else {
