@@ -41,4 +41,7 @@ public class UserSucess extends AppCompatActivity {
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {}
 }

@@ -18,4 +18,7 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
+
+    @Override
+    public void onBackPressed() {}
 }

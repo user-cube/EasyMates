@@ -10,4 +10,7 @@ public class SuccessJoin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_success_join);
     }
+
+    @Override
+    public void onBackPressed() {}
 }

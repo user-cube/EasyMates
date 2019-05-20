@@ -27,4 +27,7 @@ public class SuccessGroupCreation extends AppCompatActivity {
         Intent intent = new Intent(this, manageHouse.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {}
 }

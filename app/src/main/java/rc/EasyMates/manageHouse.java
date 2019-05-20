@@ -16,5 +16,8 @@ public class manageHouse extends AppCompatActivity {
         setContentView(R.layout.activity_manage_group);
     }
 
+    @Override
+    public void onBackPressed() {}
+
 
 }
