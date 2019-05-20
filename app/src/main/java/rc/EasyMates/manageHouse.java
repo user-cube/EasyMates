@@ -25,12 +25,12 @@ public class manageHouse extends AppCompatActivity {
         textView.setText(GlobalClass.defaultLocation);
     }
 
-    public void addDespesa(){
+    public void addDespesa(View view){
         Intent intent = new Intent(this, AddDespesas.class);
         startActivity(intent);
     }
 
-    public void addShopList(){
+    public void addShopList(View view){
         Intent intent = new Intent(this, ShopList.class);
         startActivity(intent);
     }

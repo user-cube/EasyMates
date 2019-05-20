@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:onClick="addDespesa"
         app:layout_constraintBottom_toTopOf="@+id/addLista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -53,6 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:onClick="addShopList"
         app:layout_constraintBottom_toTopOf="@+id/addMembros"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -92,10 +94,12 @@
         android:layout_width="171dp"
         android:layout_height="49dp"
         android:gravity="center"
-        android:textSize="18sp"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/addDespesas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
