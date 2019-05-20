@@ -1,5 +1,6 @@
 package rc.EasyMates;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -11,6 +12,10 @@ public class SuccessJoin extends AppCompatActivity {
         setContentView(R.layout.activity_success_join);
     }
 
+    public void manageHouse(){
+        Intent intent = new Intent(this, manageHouse.class);
+        startActivity(intent);
+    }
     @Override
     public void onBackPressed() {}
 }

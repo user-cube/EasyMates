@@ -21,7 +21,7 @@
         android:layout_width="288dp"
         android:layout_height="147dp"
         android:gravity="center"
-        android:text="Grupo criado com sucesso, começa já a gerir a tua casa"
+        android:text="Juntou-se ao grupo com sucesso!! Começa a gerir a casa!"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
