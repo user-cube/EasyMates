@@ -1,14 +1,16 @@
 package rc.EasyMates;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Environment;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -158,20 +160,41 @@ public class Login extends AppCompatActivity {
             if (val) {
                 if (val2) { //first login
                     GlobalClass.email= email.getText().toString();
+                    Toast.makeText(Login.this,"Login efetuado com sucesso!",Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(this, DashboardInit.class);
                     startActivity(intent);
 
                 } else { //not first login
                     GlobalClass.email= email.getText().toString();
                     Intent intent = new Intent(this, manageHouse.class);
+                    Toast.makeText(Login.this,"Login efetuado com sucesso!",Toast.LENGTH_LONG).show();
                     startActivity(intent);
                 }
             } else {
-                //do nothing
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                alertDialogBuilder.setMessage("Username ou password errados!");
+                alertDialogBuilder.setPositiveButton("Tentar novamente",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface arg0, int arg1) {
+                    }
+                });
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
             }
 
         } catch (Exception e){
-            Log.d("Login", "Falhou o preenchimento de algum valor");
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+            alertDialogBuilder.setMessage("Os campos não estão preenchidos!");
+            alertDialogBuilder.setPositiveButton("Ok",
+            new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface arg0, int arg1) {
+                }
+            });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
         }
     }
+
 }
