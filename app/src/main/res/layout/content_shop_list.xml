@@ -113,19 +113,6 @@
         app:layout_constraintTop_toBottomOf="@+id/element2" />
 
     <TextView
-        android:id="@+id/element7"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element2" />
-
-    <TextView
         android:id="@+id/element6"
         android:layout_width="98dp"
         android:layout_height="44dp"
