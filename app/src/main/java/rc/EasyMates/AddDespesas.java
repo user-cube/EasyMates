@@ -31,14 +31,14 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
         TextView textView = (TextView)findViewById(R. id. idCasa);
         textView.setText(GlobalClass.defaultLocation);
 
-        TextView aguaCasa = (TextView)findViewById(R. id. idAgua1);
-        TextView idCompras1 = (TextView)findViewById(R. id. idCompras1);
+       // TextView aguaCasa = (TextView)findViewById(R. id. idAgua1);
+       // TextView idCompras1 = (TextView)findViewById(R. id. idCompras1);
         TextView idCompras2 = (TextView)findViewById(R. id. idCompras2);
         TextView idLuz1 = (TextView)findViewById(R. id. idLuz1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -46,11 +46,11 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
         navigationView.setNavigationItemSelectedListener(this);
 
         if(GlobalClass.agua != null){
-            aguaCasa.setText(GlobalClass.agua);
+           // aguaCasa.setText(GlobalClass.agua);
         }
 
         if(GlobalClass.compras1 !=null){
-            idCompras1.setText(GlobalClass.compras1);
+          //  idCompras1.setText(GlobalClass.compras1);
         }
 
         if(GlobalClass.compras2 !=null){
