@@ -79,6 +79,10 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             Intent searchIntent = new Intent(Dashboard.this, manageHouse.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+        } else if (id == R.id.logout) {
+            Intent searchIntent = new Intent(Dashboard.this, Login.class);
+            startActivity(searchIntent);
+            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
