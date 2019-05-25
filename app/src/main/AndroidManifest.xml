@@ -19,14 +19,11 @@
         <activity android:name=".AddLuz" />
         <activity android:name=".AddAgua" />
         <activity android:name=".ShopListSave" />
-        <activity android:name=".ShopList" />
-        <activity android:name=".AddDespesas" />
+        <activity android:name=".ShopList" android:label="Shop List"/>
+        <activity android:name=".AddDespesas" android:label="Add Despesas"/>
         <activity android:name=".SuccessJoin" />
-        <activity
-            android:name=".UserSucess2"
-            android:label="@string/title_activity_user_sucess2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".manageHouse" />
+
+        <activity android:name=".manageHouse" android:label="Manage House"/>
         <activity android:name=".SuccessGroupCreation" />
         <activity android:name=".NewGroup" />
         <activity android:name=".JoinGroup" />
