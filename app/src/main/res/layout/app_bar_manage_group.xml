@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    context=".Dashboard"
+    context=".manageHouse"
     >
 
     <android.support.design.widget.AppBarLayout
@@ -22,6 +22,6 @@
             />
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/activity_dashboard_init" />
+    <include layout="@layout/activity_manage_group" />
 
 </android.support.design.widget.CoordinatorLayout>
