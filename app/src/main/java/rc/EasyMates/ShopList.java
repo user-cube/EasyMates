@@ -26,10 +26,10 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         onLoad();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -37,14 +37,14 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
     }
 
     public void onLoad(){
-        TextView textView = (TextView)findViewById(R. id. casaName);
+        /*TextView textView = (TextView)findViewById(R. id. casaName);
         TextView item1 = (TextView)findViewById(R. id. item1);
         TextView item2 = (TextView)findViewById(R. id.item2);
         TextView item4 = (TextView)findViewById(R. id.item4);
         TextView item3 = (TextView)findViewById(R. id.item3);
         TextView item6 = (TextView)findViewById(R. id.item6);
 
-        textView.setText(GlobalClass.defaultLocation);
+        //textView.setText(GlobalClass.defaultLocation);
         item1.setText(GlobalClass.item1);
         item2.setText(GlobalClass.item2);
         item4.setText(GlobalClass.item4);
@@ -57,7 +57,7 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
         if(GlobalClass.item7 != null){
             TextView item7 = (TextView)findViewById(R. id. item7);
             item7.setText(GlobalClass.item7);
-        }
+        }*/
     }
 
     public void saveShopList(View view){

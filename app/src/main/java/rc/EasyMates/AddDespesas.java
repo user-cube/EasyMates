@@ -23,29 +23,31 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_despesas);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        onLoad();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            onLoad();
+        }
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void onLoad(){
-        TextView textView = (TextView)findViewById(R. id. idCasa);
+        /*TextView textView = (TextView)findViewById(R. id. idCasa);
         textView.setText(GlobalClass.defaultLocation);
 
-       // TextView aguaCasa = (TextView)findViewById(R. id. idAgua1);
-       // TextView idCompras1 = (TextView)findViewById(R. id. idCompras1);
+        TextView aguaCasa = (TextView)findViewById(R. id. idAgua1);
+        TextView idCompras1 = (TextView)findViewById(R. id. idCompras1);
         TextView idCompras2 = (TextView)findViewById(R. id. idCompras2);
         TextView idLuz1 = (TextView)findViewById(R. id. idLuz1);
+        */
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        if(GlobalClass.agua != null){
+        /*if(GlobalClass.agua != null){
            // aguaCasa.setText(GlobalClass.agua);
         }
 
@@ -59,7 +61,7 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
 
         if(GlobalClass.luz !=null){
             idLuz1.setText(GlobalClass.luz);
-        }
+        }*/
 
     }
 
