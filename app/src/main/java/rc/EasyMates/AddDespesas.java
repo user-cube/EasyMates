@@ -23,21 +23,6 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_despesas);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            onLoad();
-        }
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public void onLoad(){
-        /*TextView textView = (TextView)findViewById(R. id. idCasa);
-        textView.setText(GlobalClass.defaultLocation);
-
-        TextView aguaCasa = (TextView)findViewById(R. id. idAgua1);
-        TextView idCompras1 = (TextView)findViewById(R. id. idCompras1);
-        TextView idCompras2 = (TextView)findViewById(R. id. idCompras2);
-        TextView idLuz1 = (TextView)findViewById(R. id. idLuz1);
-        */
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -46,24 +31,8 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        /*if(GlobalClass.agua != null){
-           // aguaCasa.setText(GlobalClass.agua);
-        }
-
-        if(GlobalClass.compras1 !=null){
-          //  idCompras1.setText(GlobalClass.compras1);
-        }
-
-        if(GlobalClass.compras2 !=null){
-            idCompras2.setText(GlobalClass.compras2);
-        }
-
-        if(GlobalClass.luz !=null){
-            idLuz1.setText(GlobalClass.luz);
-        }*/
-
     }
+    
 
     public void addAgua(View view){
         Intent intent = new Intent(this, AddAgua.class);
@@ -82,9 +51,6 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, manageHouse.class);
-        startActivity(intent);
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -92,7 +58,6 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
             super.onBackPressed();
         }
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.nav_drawer, menu);
