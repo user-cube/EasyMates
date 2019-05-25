@@ -12,9 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toolbar;
 
 /**
  * Main page of House Management.
@@ -38,22 +35,6 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-    }
-
-
-    public void addDespesa(View view){
-        Intent intent = new Intent(this, AddDespesas.class);
-        startActivity(intent);
-    }
-
-    public void addShopList(View view){
-        Intent intent = new Intent(this, ShopList.class);
-        startActivity(intent);
-    }
-
-    public void membros(View view){
-        Intent intent = new Intent(this, AddMembers.class);
-        startActivity(intent);
     }
 
     @Override

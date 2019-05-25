@@ -15,9 +15,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SuccessMember"></activity>
         <activity android:name=".AddMembers" />
-        <activity android:name=".AddCompras" />
-        <activity android:name=".AddLuz" />
-        <activity android:name=".AddAgua" />
         <activity android:name=".ShopListSave" />
         <activity android:name=".ShopList" android:label="Shop List"/>
         <activity android:name=".AddDespesas" android:label="Add Despesas"/>
