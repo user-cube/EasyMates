@@ -20,7 +20,7 @@ public class ShopListSave extends AppCompatActivity {
 
     public void onLoad(){
         TextView textView = (TextView)findViewById(R. id. nameHouse);
-        textView.setText("Casa " + GlobalClass.defaultLocation);
+        textView.setText("Casa: " + GlobalClass.defaultLocation);
 
     }
 
