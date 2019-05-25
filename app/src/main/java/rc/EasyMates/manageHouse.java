@@ -40,10 +40,6 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
 
     }
 
-    public void onLoad(){
-        TextView textView = (TextView)findViewById(R. id. HouseName);
-        textView.setText(GlobalClass.defaultLocation);
-    }
 
     public void addDespesa(View view){
         Intent intent = new Intent(this, AddDespesas.class);
