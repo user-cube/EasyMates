@@ -74,7 +74,7 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_expenses) {
-            Intent searchIntent = new Intent(manageHouse.this, AddDespesas.class);
+            Intent searchIntent = new Intent(manageHouse.this, Add_AddDespesas.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_group) {

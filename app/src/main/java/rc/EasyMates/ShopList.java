@@ -69,7 +69,7 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_expenses) {
-            Intent searchIntent = new Intent(ShopList.this, AddDespesas.class);
+            Intent searchIntent = new Intent(ShopList.this, Add_AddDespesas.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_group) {

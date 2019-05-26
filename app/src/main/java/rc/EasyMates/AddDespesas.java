@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class AddDespesas extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -65,7 +66,7 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_expenses) {
-            Intent searchIntent = new Intent(AddDespesas.this, AddDespesas.class);
+            Intent searchIntent = new Intent(AddDespesas.this, Add_AddDespesas.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_group) {
@@ -91,4 +92,8 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
     }
 
 
+    public void addDespesa(View view) {
+        Intent intent = new Intent(this, Add_AddDespesas.class);
+        startActivity(intent);
+    }
 }

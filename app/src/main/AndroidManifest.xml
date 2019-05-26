@@ -13,21 +13,36 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profile"></activity>
-        <activity android:name=".Profile_Change" />
-        <activity android:name=".changeHouseData" />
-        <activity android:name=".AddMembers" />
+        <activity android:name=".Profile"
+            android:label="Perfil"
+            ></activity>
+        <activity android:name=".Profile_Change"
+            android:label="Alterar Perfil"
+            />
+        <activity android:name=".changeHouseData"
+            android:label="Info Casa"
+            />
+        <activity android:name=".AddMembers"
+            android:label="Adicionar Membros"
+            />
         <activity android:name=".ShopListSave" />
         <activity
             android:name=".ShopList"
-            android:label="Shop List" />
+            android:label="Lista de Compras"
+            />
         <activity
             android:name=".AddDespesas"
-            android:label="Add Despesas" />
+            android:label="Adicionar Despesas"
+            />
+        <activity
+            android:name=".Add_AddDespesas"
+            android:label="Adicionar Despesas"
+            />
         <activity android:name=".SuccessJoin" />
         <activity
             android:name=".manageHouse"
-            android:label="Manage House" />
+            android:label="Gerir Casa"
+            />
         <activity android:name=".SuccessGroupCreation" />
         <activity android:name=".NewGroup" />
         <activity android:name=".JoinGroup" />
