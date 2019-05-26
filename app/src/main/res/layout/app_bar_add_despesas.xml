@@ -7,6 +7,6 @@
     context=".AddDespesas"
     >
 
-    <include layout="@layout/activity_add_despesas" />
+    <include layout="@layout/content_add_despesas" />
 
 </android.support.design.widget.CoordinatorLayout>
