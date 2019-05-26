@@ -3,6 +3,7 @@ package rc.EasyMates;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
+import android.provider.Settings;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -31,6 +32,8 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        onLoad();
     }
 
     @Override
@@ -92,49 +95,43 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
     }
 
     public void onLoad(){
-        TextView house = (TextView) findViewById(R.id.houseName);
-        house.setText("Itens em falta: " + GlobalClass.defaultLocation);
+
         TextView elementOne = (TextView) findViewById(R.id.elementOne);
         TextView elementTwo2 = (TextView) findViewById(R.id.elementTwo2);
         TextView element = (TextView) findViewById(R.id.element);
-        TextView element3 = (TextView) findViewById(R.id.element3);
-        TextView element4 = (TextView) findViewById(R.id.element4);
-        TextView element2 = (TextView) findViewById(R.id.element2);
-        TextView element5 = (TextView) findViewById(R.id.element5);
-        TextView element6 = (TextView) findViewById(R.id.element6);
-        TextView element8 = (TextView) findViewById(R.id.element8);
+        TextView element3 = (TextView) findViewById(R.id.element9);
+        TextView element4 = (TextView) findViewById(R.id.element3);
+        TextView element2 = (TextView) findViewById(R.id.element7);
 
-        if (GlobalClass.item1 != null){
-            elementOne.setText(GlobalClass.item1);
+        if (GlobalClass.despesa1 != null){
+            elementOne.setText(GlobalClass.despesa1);
         }
-        if (GlobalClass.item2 != null){
-            elementTwo2.setText(GlobalClass.item2);
+        if (GlobalClass.despesa2 != null){
+            elementTwo2.setText(GlobalClass.despesa2);
         }
-        if (GlobalClass.item3 != null){
-            element.setText(GlobalClass.item3);
+        if (GlobalClass.despesa3 != null){
+            element.setText(GlobalClass.despesa3);
         }
-        if (GlobalClass.item4 != null){
-            element3.setText(GlobalClass.item4);
+        if (GlobalClass.despesa4 != null){
+            element3.setText(GlobalClass.despesa4);
         }
-        if (GlobalClass.item5 != null){
-            element4.setText(GlobalClass.item5);
+        if (GlobalClass.despesa5 != null){
+            element4.setText(GlobalClass.despesa5);
         }
-        if (GlobalClass.item6 != null){
-            element2.setText(GlobalClass.item6);
+        if (GlobalClass.despesa6 != null){
+            element2.setText(GlobalClass.despesa6);
         }
-        if (GlobalClass.item7 != null){
-            element5.setText(GlobalClass.item7);
-        }
-        if (GlobalClass.item8 != null){
-            element6.setText(GlobalClass.item8);
-        }
-        if (GlobalClass.item9 != null){
-            element8.setText(GlobalClass.item9);
-        }
+
     }
 
     public void addDespesa(View view){
         Intent intent = new Intent(this, AddDespesas.class);
         startActivity(intent);
     }
+
+    public void editDespesa(View view){
+        Intent intent = new Intent(this, AddDespesas.class);
+        startActivity(intent);
+    }
+
 }

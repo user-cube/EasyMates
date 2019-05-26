@@ -96,4 +96,8 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
         Intent intent = new Intent(this, Add_AddDespesas.class);
         startActivity(intent);
     }
+
+    public void onLoad(){
+
+    }
 }

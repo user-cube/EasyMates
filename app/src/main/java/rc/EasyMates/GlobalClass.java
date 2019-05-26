@@ -37,4 +37,11 @@ public class GlobalClass {
     public static String member1 = "António Marques";
     public static String member2 = "Luís Costa";
     public static String member3 = null;
+
+    public static String despesa1 = "Miguel adicionou: 20€ - Água fevereiro";
+    public static String despesa2 = "Manel adicionou: 10,34€ - Compras 19 de fevereiro";
+    public static String despesa3 = "Lucas adicionou: 25,87€ - Gás janeiro";
+    public static String despesa4 = null;
+    public static String despesa5 = null;
+    public static String despesa6 = null;
 }
