@@ -15,6 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class ShopList extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -90,6 +92,8 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
     }
 
     public void onLoad(){
+        TextView house = (TextView) findViewById(R.id.houseName);
+        house.setText("Casa: " + GlobalClass.defaultLocation);
         TextView elementOne = (TextView) findViewById(R.id.elementOne);
         TextView elementTwo2 = (TextView) findViewById(R.id.elementTwo2);
         TextView element = (TextView) findViewById(R.id.element);
