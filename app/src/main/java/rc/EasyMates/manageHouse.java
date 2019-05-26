@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 /**
  * Main page of House Management.
@@ -89,6 +90,12 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void onLoad(){
+        TextView textView = (TextView)findViewById(R. id. nameHouse);
+        textView.setText("Casa: " + GlobalClass.defaultLocation);
+
     }
 
 
