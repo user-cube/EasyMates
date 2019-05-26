@@ -132,4 +132,9 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
         startActivity(intent);
     }
 
+    public void changeHouse(View view){
+        Intent intent = new Intent(this, changeHouseData.class);
+        startActivity(intent);
+    }
+
 }

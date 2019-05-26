@@ -5,6 +5,7 @@
     tools:targetApi="11">
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -12,14 +13,20 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SuccessMember"></activity>
+        <activity android:name=".changeHouseData"></activity>
+        <activity android:name=".SuccessMember" />
         <activity android:name=".AddMembers" />
         <activity android:name=".ShopListSave" />
-        <activity android:name=".ShopList" android:label="Shop List"/>
-        <activity android:name=".AddDespesas" android:label="Add Despesas"/>
+        <activity
+            android:name=".ShopList"
+            android:label="Shop List" />
+        <activity
+            android:name=".AddDespesas"
+            android:label="Add Despesas" />
         <activity android:name=".SuccessJoin" />
-
-        <activity android:name=".manageHouse" android:label="Manage House"/>
+        <activity
+            android:name=".manageHouse"
+            android:label="Manage House" />
         <activity android:name=".SuccessGroupCreation" />
         <activity android:name=".NewGroup" />
         <activity android:name=".JoinGroup" />
