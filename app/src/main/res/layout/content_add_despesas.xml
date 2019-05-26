@@ -11,40 +11,62 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:lineSpacingExtra="18sp"
         android:text="Adicionar Despesa"
-        android:textColor="#00BCD4"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText11"
+        android:textColor="#903B4042"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
 
     <ImageView
         android:id="@+id/imageView23"
-        android:layout_width="205dp"
-        android:layout_height="207dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText11"
+        android:layout_width="413dp"
+        android:layout_height="282dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/imagem_aveiro" />
 
     <EditText
         android:id="@+id/editText11"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="Descrição"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/addDespesa"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Valor"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
 
 
     <android.support.design.widget.FloatingActionButton
@@ -63,10 +85,10 @@
         app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.005"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
+        app:layout_constraintVertical_bias="0.97"
         app:srcCompat="@drawable/ic_add_white_24dp"
         tools:ignore="VectorDrawableCompat" />
 </android.support.constraint.ConstraintLayout>

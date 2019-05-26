@@ -8,138 +8,134 @@
     tools:context=".Add_AddDespesas">
 
     <TextView
-        android:id="@+id/element8"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
+        android:id="@+id/element9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_border"
         android:gravity="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element6" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/element7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668" />
 
     <TextView
         android:id="@+id/element3"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_border"
         android:gravity="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:clickable="true"
         android:onClick="addDespesa"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element8"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
 
     <TextView
         android:id="@+id/houseName"
-        android:layout_width="113dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
-        android:text="TextView"
-        android:textColor="#4CAF50"
+        android:text="Recentes:"
+        android:textColor="#8D494C4D"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/elementOne"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
 
     <TextView
         android:id="@+id/elementOne"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_border"
         android:gravity="center"
+        android:text="Miguel adicionou:  20€ - Água Fevereiro"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/elementTwo2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/houseName" />
-
-    <TextView
-        android:id="@+id/element4"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element3" />
-
-    <TextView
-        android:id="@+id/element2"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element4" />
-
-    <TextView
-        android:id="@+id/element5"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element2" />
-
-    <TextView
-        android:id="@+id/element6"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element5" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
 
     <TextView
         android:id="@+id/element"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_border"
         android:gravity="center"
+        android:text="Lucas adicionou:  25,87€ - Gás Janeiro"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elementTwo2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
 
     <TextView
         android:id="@+id/elementTwo2"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_border"
         android:gravity="center"
+        android:text="Manel adicionou:  10,34€ - Compras 19 Fevereiro"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/element"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elementOne" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
 
 </android.support.constraint.ConstraintLayout>
