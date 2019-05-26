@@ -7,7 +7,6 @@
     context=".Dashboard"
     >
 
-
     <include layout="@layout/content_dashboard" />
 
 </android.support.design.widget.CoordinatorLayout>
