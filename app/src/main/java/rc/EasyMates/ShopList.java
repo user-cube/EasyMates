@@ -85,6 +85,10 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
             Intent searchIntent = new Intent(ShopList.this, manageHouse.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+        } else if (id == R.id.profile){
+            Intent searchIntent = new Intent(ShopList.this, Profile.class);
+            startActivity(searchIntent);
+            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
