@@ -94,7 +94,7 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
     }
 
     public void onLoad(){
-        TextView textView = (TextView)findViewById(R. id. nameHouse);
+        TextView textView = (TextView)findViewById(R.id.nameHouse);
         textView.setText("Casa: " + GlobalClass.defaultLocation);
 
     }

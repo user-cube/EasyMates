@@ -8,56 +8,47 @@
     tools:context=".AddDespesas">
 
     <TextView
-        android:id="@+id/idCasa"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/my_border"
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
         android:gravity="center"
         android:lineSpacingExtra="18sp"
-        android:text="1"
-        android:textColor="#4CAF50"
+        android:text="Adicionar Despesa"
+        android:textColor="#00BCD4"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editText11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
 
-    <TextView
-        android:id="@+id/idCompras2"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/my_border"
-        android:gravity="center|left"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="205dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/idLuz1"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/my_border"
-        android:gravity="center|left"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Descrição"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/addDespesa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+        android:id="@+id/addDespesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
@@ -68,7 +59,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:icon="@drawable/ic_add_white_24dp"
-        android:onClick="addLuz"
+        android:onClick="addDespesa"
         app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
