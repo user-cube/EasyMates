@@ -1,12 +1,10 @@
 package rc.EasyMates;
 
 import android.content.Intent;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Profile extends AppCompatActivity {
 
@@ -14,34 +12,26 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        onLoad();
     }
 
-    public void saveChange(View view){
+    public void onLoad(){
         TextView name, email, phone, password;
 
-        name = (TextView) findViewById(R.id.editText4);
-        email = (TextView) findViewById(R.id.editText5);
-        phone = (TextView) findViewById(R.id.editText7);
-        password = (TextView) findViewById(R.id.editText6);
+        name = (TextView) findViewById(R.id.textView8);
+        email = (TextView) findViewById(R.id.textView3);
+        phone = (TextView) findViewById(R.id.textView10);
+        password = (TextView) findViewById(R.id.textView12);
 
-        if ( GlobalClass.userName != name.getText().toString()){
-            GlobalClass.userName = name.getText().toString();
-        }
+        name.setText(GlobalClass.userName);
+        email.setText(GlobalClass.email);
+        phone.setText(GlobalClass.phone);
+        password.setText(GlobalClass.password);
+    }
 
-        if ( GlobalClass.email != email.getText().toString()){
-            GlobalClass.email = email.getText().toString();
-        }
-
-        if ( GlobalClass.password != password.getText().toString()){
-            GlobalClass.password = password.getText().toString();
-        }
-
-        if ( GlobalClass.phone != phone.getText().toString()){
-            GlobalClass.phone = phone.getText().toString();
-        }
-
-        Intent intent = new Intent(this, Profile.class);
-        Toast.makeText(Profile.this,"Alterações guardadas",Toast.LENGTH_LONG).show();
+    public void send(View view){
+        Intent intent = new Intent(this, Profile_Change.class);
         startActivity(intent);
     }
 }

@@ -89,6 +89,10 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
             Intent searchIntent = new Intent(manageHouse.this, manageHouse.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+        } else if (id == R.id.profile){
+            Intent searchIntent = new Intent(manageHouse.this, Profile.class);
+            startActivity(searchIntent);
+            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

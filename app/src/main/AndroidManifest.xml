@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Profile"></activity>
+        <activity android:name=".Profile_Change" />
         <activity android:name=".changeHouseData" />
         <activity android:name=".AddMembers" />
         <activity android:name=".ShopListSave" />
