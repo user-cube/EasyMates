@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AddMembers extends AppCompatActivity {
 
@@ -21,7 +22,8 @@ public class AddMembers extends AppCompatActivity {
         try {
             TextView name = (TextView) findViewById(R.id.editText);
             GlobalClass.member3 = name.getText().toString();
-            Intent intent = new Intent(this, SuccessMember.class);
+            Toast.makeText(AddMembers.this,"Utilizador adicionado com sucesso!",Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, manageHouse.class);
             startActivity(intent);
         } catch (Exception e){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

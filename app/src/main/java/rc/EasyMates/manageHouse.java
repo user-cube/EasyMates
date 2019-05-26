@@ -113,6 +113,7 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
 
         member1.setText(GlobalClass.member1);
         member2.setText(GlobalClass.member2);
+
         if (GlobalClass.member3 != null){
             member3.setText(GlobalClass.member3);
         }
