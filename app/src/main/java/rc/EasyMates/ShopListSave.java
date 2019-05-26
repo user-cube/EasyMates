@@ -82,7 +82,7 @@ public class ShopListSave extends AppCompatActivity {
         String NOTIFICATION_CHANNEL_ID = "my_channel_01";
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.ic_launcher_background)
+                        .setSmallIcon(R.drawable.logo)
                         .setContentTitle("Lista de compras")
                         .setContentText(GlobalClass.userName + " adicionou itens à lista de compras");
         Intent notificationIntent = new Intent(this, MainActivity.class);
