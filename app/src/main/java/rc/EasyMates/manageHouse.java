@@ -103,7 +103,7 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
         textView.setText("Casa: " + GlobalClass.defaultLocation);
 
         TextView houseId = (TextView) findViewById(R.id.houseID);
-        houseId.setText(GlobalClass.defaultUUID);
+        houseId.setText("Id da casa: " + GlobalClass.defaultUUID);
 
         TextView member1, member2, member3;
 
