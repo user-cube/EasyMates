@@ -115,9 +115,11 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
         member2 = (TextView) findViewById(R.id.textView7);
         member3 = (TextView) findViewById(R.id.textView5);
 
-        member1.setText(GlobalClass.member1);
-        member2.setText(GlobalClass.member2);
-
+        if (GlobalClass.member1 != null){
+            member1.setText(GlobalClass.member1);        }
+        if (GlobalClass.member2 != null){
+            member2.setText(GlobalClass.member2);
+        }
         if (GlobalClass.member3 != null){
             member3.setText(GlobalClass.member3);
         }

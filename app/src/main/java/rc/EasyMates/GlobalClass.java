@@ -16,6 +16,9 @@ public class GlobalClass {
     public static String groupName;
     public static String location;
 
+    public static String mail1 = null;
+    public static String mail2 = null;
+
 
     public static String defaultUUID = "abcd";
     public static String defaultLocation = "Aveiro";

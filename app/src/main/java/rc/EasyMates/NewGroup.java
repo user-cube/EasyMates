@@ -1,5 +1,7 @@
 package rc.EasyMates;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
@@ -43,8 +45,8 @@ public class NewGroup extends AppCompatActivity {
 
         if(groupName.getText().toString().trim().length() > 0 && location.getText().toString().trim().length() > 0){
             GlobalClass.groupName = groupName.getText().toString();
-            GlobalClass.location = location.getText().toString();
-            GlobalClass.uuid = uuid;
+            GlobalClass.defaultLocation = location.getText().toString();
+            GlobalClass.defaultUUID = uuid;
             return true;
         }
 
@@ -59,13 +61,21 @@ public class NewGroup extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void createGroup(View view){
         if(generateGroup()){
+            GlobalClass.member1 = null;
+            GlobalClass.member2 = null;
             Intent intent = new Intent(this, SuccessGroupCreation.class);
             startActivity(intent);
         } else{
-            Log.d(
-                    "Group Generation",
-                    "Fail to generate group"
-            );
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+            alertDialogBuilder.setMessage("Os campos não estão preenchidos!");
+            alertDialogBuilder.setPositiveButton("Ok",
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface arg0, int arg1) {
+                        }
+                    });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
         }
 
     }

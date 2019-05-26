@@ -19,13 +19,27 @@ public class AddMembers extends AppCompatActivity {
     }
 
     public void addMember(View view){
-        try {
-            TextView name = (TextView) findViewById(R.id.editText);
-            GlobalClass.member3 = name.getText().toString();
-            Toast.makeText(AddMembers.this,"Utilizador adicionado com sucesso!",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, manageHouse.class);
-            startActivity(intent);
-        } catch (Exception e){
+        TextView name = (TextView) findViewById(R.id.editText);
+        TextView email = (TextView) findViewById(R.id.editText2);
+
+        if (email.getText().toString().trim().length() > 0 && name.getText().toString().trim().length() > 0) {
+            if (GlobalClass.member1 == null){
+                GlobalClass.member1 = name.getText().toString();
+                Toast.makeText(AddMembers.this, "Utilizador adicionado com sucesso!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, manageHouse.class);
+                startActivity(intent);
+            } else if (GlobalClass.member2 == null) {
+                GlobalClass.member2 = name.getText().toString();
+                Toast.makeText(AddMembers.this, "Utilizador adicionado com sucesso!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, manageHouse.class);
+                startActivity(intent);
+            } else if (GlobalClass.member3 == null) {
+                GlobalClass.member3 = name.getText().toString();
+                Toast.makeText(AddMembers.this, "Utilizador adicionado com sucesso!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, manageHouse.class);
+                startActivity(intent);
+            }
+        }else{
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
             alertDialogBuilder.setMessage("Os campos não estão preenchidos!");
             alertDialogBuilder.setPositiveButton("Ok",
