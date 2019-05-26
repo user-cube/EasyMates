@@ -9,6 +9,9 @@ public class GlobalClass {
 
     public static String email;
     public static String userName = "Miguel Santos";
+    public static String password = "1234";
+    public static String phone = "910000000";
+
     public static String uuid;
     public static String groupName;
     public static String location;
