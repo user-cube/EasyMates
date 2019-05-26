@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 /**
@@ -94,5 +95,12 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
 
     }
 
+    public void share(View view){
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Group ID: " + GlobalClass.defaultUUID);
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
+    }
 
 }

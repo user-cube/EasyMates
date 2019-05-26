@@ -24,7 +24,21 @@
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="213dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:onClick="share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="?attr/actionModeShareDrawable"
+        tools:layout_editor_absoluteY="669dp" />
 
 </android.support.constraint.ConstraintLayout>

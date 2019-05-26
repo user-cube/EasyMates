@@ -28,4 +28,7 @@ public class GlobalClass {
     public static String item8 = null;
     public static String item9 = null;
 
+    public static String member1 = "António Marques";
+    public static String member2 = "Luís Costa";
+    public static String member3 = null;
 }
