@@ -35,7 +35,9 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+
+
+        onLoad();
 
     }
 
@@ -94,8 +96,25 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
     }
 
     public void onLoad(){
-        TextView textView = (TextView)findViewById(R.id.nameHouse);
+
+        TextView textView = (TextView)findViewById(R. id. HouseName);
+
         textView.setText("Casa: " + GlobalClass.defaultLocation);
+
+        TextView houseId = (TextView) findViewById(R.id.houseID);
+        houseId.setText(GlobalClass.defaultUUID);
+
+        TextView member1, member2, member3;
+
+        member1 = (TextView) findViewById(R.id.textView6);
+        member2 = (TextView) findViewById(R.id.textView7);
+        member3 = (TextView) findViewById(R.id.textView5);
+
+        member1.setText(GlobalClass.member1);
+        member2.setText(GlobalClass.member2);
+        if (GlobalClass.member3 != null){
+            member3.setText(GlobalClass.member3);
+        }
 
     }
 
@@ -105,6 +124,11 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
         sendIntent.putExtra(Intent.EXTRA_TEXT, "Group ID: " + GlobalClass.defaultUUID);
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
+    }
+
+    public void addMember(View view){
+        Intent intent = new Intent(this, AddMembers.class);
+        startActivity(intent);
     }
 
 }
