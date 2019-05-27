@@ -1,9 +1,14 @@
 package rc.EasyMates;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -192,26 +197,57 @@ public class VerDespesa extends AppCompatActivity implements NavigationView.OnNa
             switch (GlobalClass.checker){
                 case "despesa1":
                     GlobalClass.despesa1 = null;
+                    showNotification();
                     break;
                 case "despesa2":
                     GlobalClass.despesa2 = null;
+                    showNotification();
                     break;
                 case "despesa3":
                     GlobalClass.despesa3 = null;
+                    showNotification();
                     break;
                 case "despesa4":
                     GlobalClass.despesa4 = null;
+                    showNotification();
                     break;
                 case "despesa5":
                     GlobalClass.despesa5 = null;
+                    showNotification();
                     break;
                 case "despesa6":
                     GlobalClass.despesa6 = null;
+                    showNotification();
                     break;
             }
         }
         Intent intent = new Intent(this, Add_AddDespesas.class);
         startActivity(intent);
+    }
+
+    private void showNotification() {
+        String NOTIFICATION_CHANNEL_ID = "my_channel_03";
+        NotificationCompat.Builder builder =
+                new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.logo)
+                        .setContentTitle("Despesas pagas")
+                        .setContentText(GlobalClass.userName + " efetuou o pagamento das despesas");
+        Intent notificationIntent = new Intent(this, MainActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(contentIntent);
+        // Add as notification
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O)
+        {
+            NotificationChannel nChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "NOTIFICATION_CHANNEL_NAME", NotificationManager.IMPORTANCE_HIGH);
+            nChannel.enableLights(true);
+            assert manager != null;
+            builder.setChannelId(NOTIFICATION_CHANNEL_ID);
+            manager.createNotificationChannel(nChannel);
+        }
+        assert manager != null;
+        manager.notify(0, builder.build());
     }
 
 }
