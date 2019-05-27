@@ -130,6 +130,34 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
     }
 
     public void editDespesa(View view){
+        GlobalClass.checker = "despesa1";
+        Intent intent = new Intent(this, VerDespesa.class);
+        startActivity(intent);
+    }
+
+    public void editDespesa2(View view){
+        GlobalClass.checker = "despesa2";
+        Intent intent = new Intent(this, VerDespesa.class);
+        startActivity(intent);
+    }
+
+    public void editDespesa3(View view){
+        GlobalClass.checker = "despesa3";
+        Intent intent = new Intent(this, VerDespesa.class);
+        startActivity(intent);
+    }
+    public void editDespesa4(View view){
+        GlobalClass.checker = "despesa4";
+        Intent intent = new Intent(this, VerDespesa.class);
+        startActivity(intent);
+    }
+    public void editDespesa5(View view){
+        GlobalClass.checker = "despesa5";
+        Intent intent = new Intent(this, VerDespesa.class);
+        startActivity(intent);
+    }
+    public void editDespesa6(View view){
+        GlobalClass.checker = "despesa6";
         Intent intent = new Intent(this, VerDespesa.class);
         startActivity(intent);
     }
