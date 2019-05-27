@@ -105,7 +105,6 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
         TextView element = (TextView) findViewById(R.id.element);
         TextView element3 = (TextView) findViewById(R.id.element9);
         TextView element4 = (TextView) findViewById(R.id.element3);
-        TextView element2 = (TextView) findViewById(R.id.element7);
 
         if (GlobalClass.despesa1 != null){
             elementOne.setText(GlobalClass.despesa1);
@@ -121,9 +120,6 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
         }
         if (GlobalClass.despesa5 != null){
             element4.setText(GlobalClass.despesa5);
-        }
-        if (GlobalClass.despesa6 != null){
-            element2.setText(GlobalClass.despesa6);
         }
 
     }
