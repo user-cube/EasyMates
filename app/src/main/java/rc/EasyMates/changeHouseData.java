@@ -104,10 +104,6 @@ public class changeHouseData extends AppCompatActivity implements NavigationView
             Intent searchIntent = new Intent(changeHouseData.this, Login.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-        } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(changeHouseData.this, Dashboard.class);
-            startActivity(searchIntent);
-            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.profile){
             Intent searchIntent = new Intent(changeHouseData.this, Profile.class);
             startActivity(searchIntent);

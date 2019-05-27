@@ -93,10 +93,6 @@ public class Profile extends AppCompatActivity implements NavigationView.OnNavig
             Intent searchIntent = new Intent(Profile.this, Login.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-        } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(Profile.this, Dashboard.class);
-            startActivity(searchIntent);
-            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.profile){
             Intent searchIntent = new Intent(Profile.this, Profile.class);
             startActivity(searchIntent);
