@@ -32,20 +32,6 @@ public class ShopListSave extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_list_save);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        onLoad();
-    }
-
-    public void onLoad(){
-        TextView textView = (TextView)findViewById(R. id. nameHouse);
-        textView.setText("Casa: " + GlobalClass.defaultLocation);
-
     }
 
     @TargetApi(Build.VERSION_CODES.O)

@@ -21,21 +21,6 @@ public class changeHouseData extends AppCompatActivity implements NavigationView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_house_data);
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-        onLoad();
-    }
-
-    public void onLoad(){
-        TextView house = (TextView) findViewById(R.id.textView2);
-        house.setText("Nome atual: " +GlobalClass.defaultLocation);
     }
 
     public void save(View view){
