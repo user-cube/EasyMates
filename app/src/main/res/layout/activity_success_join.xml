@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9711D6F1"
     tools:context=".SuccessJoin">
 
     <ImageView
@@ -23,6 +24,7 @@
         android:layout_height="120dp"
         android:gravity="center"
         android:text="Adicionado ao grupo com sucesso!! Começa a gerir a tua casa!"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gestCasa"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +36,11 @@
         android:id="@+id/gestCasa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#9711D6F1"
         android:onClick="manageHouse"
         android:text="Gerir Casa"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
