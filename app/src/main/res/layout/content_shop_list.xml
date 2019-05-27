@@ -74,6 +74,7 @@
         android:id="@+id/houseName"
         android:layout_width="217dp"
         android:layout_height="42dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="Lista de Compras"
@@ -82,9 +83,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.407" />
 
     <TextView
         android:id="@+id/elementOne"

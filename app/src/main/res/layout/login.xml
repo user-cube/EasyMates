@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9711D6F1"
+    android:requiresFadingEdge="horizontal"
     tools:context=".Login">
 
     <ImageView
@@ -27,6 +29,7 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/passwordLog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -50,8 +53,11 @@
         android:id="@+id/loginButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#9711D6F1"
         android:onClick="login"
         android:text="Login"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -62,6 +68,7 @@
         android:id="@+id/barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="left" />
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
 
 </android.support.constraint.ConstraintLayout>
