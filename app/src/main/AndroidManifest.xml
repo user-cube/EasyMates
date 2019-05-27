@@ -50,6 +50,7 @@
         <activity android:name=".DashboardInit" />
         <activity android:name=".SignUp" />
         <activity android:name=".Login" />
+        <activity android:name=".VerDespesa"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -11,6 +11,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Switch;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class VerDespesa extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -29,6 +33,8 @@ public class VerDespesa extends AppCompatActivity implements NavigationView.OnNa
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        onLoad();
     }
 
     @Override
@@ -89,8 +95,122 @@ public class VerDespesa extends AppCompatActivity implements NavigationView.OnNa
         return true;
     }
 
+    public void onLoad(){
+        TextView name = (TextView) findViewById(R.id.textView18);
+        TextView valor = (TextView) findViewById(R.id.textView20);
+        TextView desc = (TextView) findViewById(R.id.textView16);
+
+        String desp;
+        String [] despi;
+        String chars = "";
+
+        switch (GlobalClass.checker){
+            case "despesa1":
+                desp = GlobalClass.despesa1;
+                despi = desp.split(" ");
+
+                name.setText(despi[0]);
+                valor.setText(despi[2]);
+
+                for (int i = 4; i < despi.length; i++ ){
+                    chars = chars + " " + despi[i];
+                }
+
+                desc.setText(chars);
+                break;
+            case "despesa2":
+                desp = GlobalClass.despesa2;
+                despi = desp.split(" ");
+
+                name.setText(despi[0]);
+                valor.setText(despi[2]);
+
+                for (int i = 4; i < despi.length; i++ ){
+                    chars = chars + " " + despi[i];
+                }
+
+                desc.setText(chars);
+                break;
+            case "despesa3":
+                desp = GlobalClass.despesa3;
+                despi = desp.split(" ");
+
+                name.setText(despi[0]);
+                valor.setText(despi[2]);
+
+                for (int i = 4; i < despi.length; i++ ){
+                    chars = chars + " " + despi[i];
+                }
+
+                desc.setText(chars);
+                break;
+            case "despesa4":
+                desp = GlobalClass.despesa4;
+                despi = desp.split(" ");
+
+                name.setText(despi[0]);
+                valor.setText(despi[2]);
+
+                for (int i = 4; i < despi.length; i++ ){
+                    chars = chars + " " + despi[i];
+                }
+
+                desc.setText(chars);
+                break;
+            case "despesa5":
+                desp = GlobalClass.despesa5;
+                despi = desp.split(" ");
+
+                name.setText(despi[0]);
+                valor.setText(despi[2]);
+
+                for (int i = 4; i < despi.length; i++ ){
+                    chars = chars + " " + despi[i];
+                }
+
+                desc.setText(chars);
+                break;
+            case "despesa6":
+                desp = GlobalClass.despesa6;
+                despi = desp.split(" ");
+
+                name.setText(despi[0]);
+                valor.setText(despi[2]);
+
+                for (int i = 4; i < despi.length; i++ ){
+                    chars = chars + " " + despi[i];
+                }
+
+                desc.setText(chars);
+                break;
+        }
+    }
+
     public void checkDespesa(View view){
-        Intent intent = new Intent(this, AddDespesas.class);
+        Switch simpleSwitch = (Switch) findViewById(R.id.switch1);
+        if (simpleSwitch.isChecked()){
+            switch (GlobalClass.checker){
+                case "despesa1":
+                    GlobalClass.despesa1 = null;
+                    break;
+                case "despesa2":
+                    GlobalClass.despesa2 = null;
+                    break;
+                case "despesa3":
+                    GlobalClass.despesa3 = null;
+                    break;
+                case "despesa4":
+                    GlobalClass.despesa4 = null;
+                    break;
+                case "despesa5":
+                    GlobalClass.despesa5 = null;
+                    break;
+                case "despesa6":
+                    GlobalClass.despesa6 = null;
+                    break;
+            }
+        }
+        Intent intent = new Intent(this, Add_AddDespesas.class);
         startActivity(intent);
     }
 
