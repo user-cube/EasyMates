@@ -86,11 +86,7 @@ public class AddDespesas extends AppCompatActivity implements NavigationView.OnN
             Intent searchIntent = new Intent(AddDespesas.this, Login.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-        } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(AddDespesas.this, Dashboard.class);
-            startActivity(searchIntent);
-            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-        }else if (id == R.id.profile){
+        } else if (id == R.id.profile){
             Intent searchIntent = new Intent(AddDespesas.this, Profile.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);

@@ -112,10 +112,6 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             Intent searchIntent = new Intent(Dashboard.this, Login.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-        } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(Dashboard.this, Dashboard.class);
-            startActivity(searchIntent);
-            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.profile){
             Intent searchIntent = new Intent(Dashboard.this, Profile.class);
             startActivity(searchIntent);

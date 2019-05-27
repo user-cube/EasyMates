@@ -160,10 +160,6 @@ public class ShopListSave extends AppCompatActivity implements NavigationView.On
             Intent searchIntent = new Intent(ShopListSave.this, Login.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-        } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(ShopListSave.this, Dashboard.class);
-            startActivity(searchIntent);
-            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.profile){
             Intent searchIntent = new Intent(ShopListSave.this, Profile.class);
             startActivity(searchIntent);

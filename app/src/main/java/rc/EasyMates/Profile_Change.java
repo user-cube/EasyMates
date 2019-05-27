@@ -101,10 +101,6 @@ public class Profile_Change extends AppCompatActivity implements NavigationView.
             Intent searchIntent = new Intent(Profile_Change.this, Login.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-        } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(Profile_Change.this, Dashboard.class);
-            startActivity(searchIntent);
-            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.profile){
             Intent searchIntent = new Intent(Profile_Change.this, Profile.class);
             startActivity(searchIntent);
