@@ -18,13 +18,26 @@
             android:title="@string/app_shop"
             />
     </group>
-
     <item android:title="@string/app_group">
         <menu>
             <item
                 android:id="@+id/manage_group"
                 android:icon="@drawable/ic_group_black_24dp"
                 android:title="@string/app_manage_group"
+                />
+        </menu>
+    </item>
+    <item android:title="@string/app_as_mais_casas">
+        <menu>
+            <item
+                android:id="@+id/manage_groupiss"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="@string/app_aveiro"
+                />
+            <item
+                android:id="@+id/manage_groupisss"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="@string/app_mais_casas"
                 />
         </menu>
     </item>

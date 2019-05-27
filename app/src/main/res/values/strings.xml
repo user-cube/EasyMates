@@ -29,15 +29,19 @@
     <string name="menu_send">Send</string>
 
     <string name="user_name">Miguel Santos</string>
-    <string name="app_manage_group">Manage Groups</string>
-    <string name="app_shop">Shopping List</string>
-    <string name="app_group">Groups</string>
-    <string name="app_manage_house">House Management</string>
-    <string name="app_manage_expenses">Expenses</string>
-    <string name="app_user_settings">User</string>
+    <string name="app_manage_group">Gerir grupo</string>
+    <string name="app_aveiro">Casa de Aveiro</string>
+    <string name="app_mais_casas">Adicionar mais casas</string>
+    <string name="app_as_mais_casas">As minhas casas</string>
+    <string name="app_shop">Lista de compras</string>
+    <string name="app_group">Grupo atual</string>
+    <string name="app_house">Casas</string>
+    <string name="app_manage_house">Gestão da casa</string>
+    <string name="app_manage_expenses">Despesas</string>
+    <string name="app_user_settings">Utilizador</string>
     <string name="app_logout">Logout</string>
-    <string name="app_profile">Profile</string>
-    <string name="app_settings">Settings</string>
+    <string name="app_profile">Perfil</string>
+    <string name="app_settings">Definições</string>
     <string name="nav_demo">Teste</string>
     <string name="channel_name" />
 </resources>
