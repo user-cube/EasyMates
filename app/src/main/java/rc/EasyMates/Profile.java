@@ -1,6 +1,8 @@
 package rc.EasyMates;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,7 +15,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class Profile extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
-
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

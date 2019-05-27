@@ -102,7 +102,6 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
         TextView element = (TextView) findViewById(R.id.element);
         TextView element3 = (TextView) findViewById(R.id.element3);
         TextView element4 = (TextView) findViewById(R.id.element4);
-        TextView element2 = (TextView) findViewById(R.id.element2);
         TextView element5 = (TextView) findViewById(R.id.element5);
         TextView element6 = (TextView) findViewById(R.id.element6);
         TextView element8 = (TextView) findViewById(R.id.element8);
@@ -123,16 +122,13 @@ public class ShopList extends AppCompatActivity implements NavigationView.OnNavi
             element4.setText(GlobalClass.item5);
         }
         if (GlobalClass.item6 != null){
-            element2.setText(GlobalClass.item6);
+            element5.setText(GlobalClass.item6);
         }
         if (GlobalClass.item7 != null){
-            element5.setText(GlobalClass.item7);
+            element6.setText(GlobalClass.item7);
         }
         if (GlobalClass.item8 != null){
-            element6.setText(GlobalClass.item8);
-        }
-        if (GlobalClass.item9 != null){
-            element8.setText(GlobalClass.item9);
+            element8.setText(GlobalClass.item8);
         }
     }
 

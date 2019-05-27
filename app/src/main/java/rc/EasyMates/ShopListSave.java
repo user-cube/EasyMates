@@ -26,6 +26,7 @@ public class ShopListSave extends AppCompatActivity implements NavigationView.On
 
     private static final String CHANNEL_ID = "CHANNEL1" ;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,12 +73,6 @@ public class ShopListSave extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         } else if (GlobalClass.item8 == null){
             GlobalClass.item8 = textView.getText().toString();
-            Toast.makeText(ShopListSave.this, "Item adicionado!", Toast.LENGTH_LONG).show();
-            showNotification();
-            Intent intent = new Intent(this, ShopList.class);
-            startActivity(intent);
-        } else if (GlobalClass.item9 == null){
-            GlobalClass.item9 = textView.getText().toString();
             Toast.makeText(ShopListSave.this, "Item adicionado!", Toast.LENGTH_LONG).show();
             showNotification();
             Intent intent = new Intent(this, ShopList.class);
