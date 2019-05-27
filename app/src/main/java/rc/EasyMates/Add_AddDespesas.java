@@ -88,6 +88,10 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
             Intent searchIntent = new Intent(Add_AddDespesas.this, Profile.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+        } else if (id == R.id.dashboard){
+            Intent searchIntent = new Intent(Add_AddDespesas.this, Dashboard.class);
+            startActivity(searchIntent);
+            overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
