@@ -130,7 +130,7 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
     }
 
     public void editDespesa(View view){
-        Intent intent = new Intent(this, AddDespesas.class);
+        Intent intent = new Intent(this, VerDespesa.class);
         startActivity(intent);
     }
 
