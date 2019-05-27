@@ -16,7 +16,7 @@ public class SuccessJoin extends AppCompatActivity {
     }
 
     public void manageHouse(View view){
-        Intent intent = new Intent(this, manageHouse.class);
+        Intent intent = new Intent(this, Dashboard.class);
         startActivity(intent);
     }
     @Override

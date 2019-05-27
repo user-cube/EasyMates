@@ -86,7 +86,7 @@ public class manageHouse extends AppCompatActivity implements NavigationView.OnN
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(manageHouse.this, manageHouse.class);
+            Intent searchIntent = new Intent(manageHouse.this, Dashboard.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.profile){

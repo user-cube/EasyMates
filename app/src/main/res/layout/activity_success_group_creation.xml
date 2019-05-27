@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9711D6F1"
+    android:background="#97FFFFFF"
     tools:context=".SuccessGroupCreation">
 
     <ImageView
@@ -24,7 +24,7 @@
         android:layout_height="120dp"
         android:gravity="center"
         android:text="Grupo criado com sucesso!! Começa a gerir a tua casa!"
-        android:textColor="@android:color/white"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gestCasa"
         app:layout_constraintEnd_toEndOf="parent"

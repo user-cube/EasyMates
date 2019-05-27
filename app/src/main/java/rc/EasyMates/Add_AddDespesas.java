@@ -81,7 +81,7 @@ public class Add_AddDespesas extends AppCompatActivity implements NavigationView
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.manage_house) {
-            Intent searchIntent = new Intent(Add_AddDespesas.this, manageHouse.class);
+            Intent searchIntent = new Intent(Add_AddDespesas.this, Dashboard.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.profile){

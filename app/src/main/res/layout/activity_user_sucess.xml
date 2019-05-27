@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9711D6F1"
+    android:background="#97FFFFFF"
     tools:context=".UserSucess">
 
     <ImageView
@@ -23,7 +23,7 @@
         android:layout_height="147dp"
         android:gravity="center"
         android:text="Utilizador criado com sucesso, por favor efetua o teu login primeiro para poderes usar a tua app favorita!"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"

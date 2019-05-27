@@ -13,36 +13,33 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profile"
-            android:label="Perfil"
-            ></activity>
-        <activity android:name=".Profile_Change"
-            android:label="Alterar Perfil"
-            />
-        <activity android:name=".changeHouseData"
-            android:label="Info Casa"
-            />
-        <activity android:name=".AddMembers"
-            android:label="Adicionar Membros"
-            />
+        <activity android:name=".Dashboard"></activity>
+        <activity
+            android:name=".Profile"
+            android:label="Perfil" />
+        <activity
+            android:name=".Profile_Change"
+            android:label="Alterar Perfil" />
+        <activity
+            android:name=".changeHouseData"
+            android:label="Info Casa" />
+        <activity
+            android:name=".AddMembers"
+            android:label="Adicionar Membros" />
         <activity android:name=".ShopListSave" />
         <activity
             android:name=".ShopList"
-            android:label="Lista de Compras"
-            />
+            android:label="Lista de Compras" />
         <activity
             android:name=".AddDespesas"
-            android:label="Adicionar Despesas"
-            />
+            android:label="Adicionar Despesas" />
         <activity
             android:name=".Add_AddDespesas"
-            android:label="Despesas"
-            />
+            android:label="Despesas" />
         <activity android:name=".SuccessJoin" />
         <activity
             android:name=".manageHouse"
-            android:label="Gerir Casa"
-            />
+            android:label="Gerir Casa" />
         <activity android:name=".SuccessGroupCreation" />
         <activity android:name=".NewGroup" />
         <activity android:name=".JoinGroup" />
@@ -50,7 +47,7 @@
         <activity android:name=".DashboardInit" />
         <activity android:name=".SignUp" />
         <activity android:name=".Login" />
-        <activity android:name=".VerDespesa"/>
+        <activity android:name=".VerDespesa" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
