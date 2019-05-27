@@ -44,4 +44,6 @@ public class GlobalClass {
     public static String despesa4 = null;
     public static String despesa5 = null;
     public static String despesa6 = null;
+
+    public static String checker = null;
 }
