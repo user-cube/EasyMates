@@ -29,7 +29,7 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="@android:color/white"
+        android:textColor="#141313"
         app:layout_constraintBottom_toTopOf="@+id/passwordLog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
